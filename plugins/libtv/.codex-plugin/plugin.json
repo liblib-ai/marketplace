@@ -1,0 +1,30 @@
+{
+  "name": "libtv",
+  "version": "0.4.4",
+  "description": "在 Codex 里用 LibTV 做视觉创作。",
+  "author": {
+    "name": "LiblibAI",
+    "url": "https://www.liblib.tv"
+  },
+  "homepage": "https://www.liblib.tv",
+  "repository": "https://github.com/liblib-ai/marketplace",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LibTV",
+    "shortDescription": "LibTV 画布、生成与创作工作流",
+    "longDescription": "用 LibTV 在 Codex 里做完整的视觉创作。从一个想法、一段剧本或一张参考图出发，边聊边把结果落到 LibTV 画布上，再回画布继续编辑。用 LibTV 你可以：按文字或参考图生成图片和视频，也可以把一张静帧变成动态画面。在画布上编排节点、连线、分组与镜头，管理剧本、分镜与时间线，让多镜头叙事逐镜衔接。把画布上的创作成果整理成一份可翻页演示的导演提案。做出品牌视觉、产品图、包装与社交媒体素材。从剧本和场景参考出发，走通 LibTV 出图 → Blender 白模运镜 → Seedance 实拍视频，也可以让一段音乐驱动出一支 20 秒一镜到底的产品广告。上传自己的素材、挑选合适的模型、随时回看生成进度，并把成片导出交付。描述你想做什么、看着结果在对话里长出来，再在已有作品上继续叠加。连接你的 LibTV 账号即可开始。",
+    "developerName": "LiblibAI",
+    "category": "Creativity",
+    "capabilities": ["Read", "Write", "Interactive"],
+    "brandColor": "#07B8DD",
+    "websiteURL": "https://www.liblib.tv",
+    "logo": "./assets/libtv-icon.svg",
+    "composerIcon": "./assets/libtv-icon.svg",
+    "defaultPrompt": [
+      "查看我在 LibTV 中的项目",
+      "把我 LibTV 画布里的作品整理成一份导演提案",
+      "根据我的剧本和场景参考，用 LibTV 出图、Blender 白模运镜，再转成实拍视频"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
