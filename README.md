@@ -8,7 +8,7 @@ LibTV 的 Codex 插件目录，只提供一个生产插件：[`libtv`](plugins/l
 
 | 安装标识 | 展示名 | 连接地址 | 版本 |
 | --- | --- | --- | --- |
-| `libtv` | LibTV | `https://mcp.liblib.tv/mcp` | `0.4.4` |
+| `libtv` | LibTV | `https://mcp.liblib.tv/mcp` | `0.4.5` |
 
 接入方式是 Codex 原生 HTTP Remote MCP：插件不预置 client ID、回调地址或凭据，也不含本地
 server，客户端按服务端 OAuth 元数据完成注册与登录。
@@ -58,3 +58,8 @@ codex plugin add libtv@libtv
 Durand & Cie. 出版的 Dubois 改编版，plate D. & F. 9516）。分发与再发布须保留该署名与许可
 声明，详见 `plugins/libtv/skills/music-driven-product-ad/references/repertoire.md` 与
 `assets/scores/catalog.json`。
+
+## 0.4.5
+
+- 同步真源已合入的长等待配置，LibTV 工具调用超时设为 1200 秒。
+- 长视频生成可在同一次调用中等待结果；连接中断后仍应按原幂等键恢复，避免重复派发。
