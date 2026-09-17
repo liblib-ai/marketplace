@@ -1,0 +1,20 @@
+{
+  "name": "libtv",
+  "interface": {
+    "displayName": "libtv"
+  },
+  "plugins": [
+    {
+      "name": "libtv",
+      "source": {
+        "source": "local",
+        "path": "./plugins/libtv"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}
