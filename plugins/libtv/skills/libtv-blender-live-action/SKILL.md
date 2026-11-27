@@ -24,7 +24,7 @@ Use this workflow when the user wants to develop a script through LibTV images, 
 6. Create simple blocking figures in Blender: a distinct colored cylinder for each body and a gray sphere for each head. Preserve a stable color-to-character map.
 7. Animate the camera and blocking according to the script and the narrative camera principles below. Render a white-model preview video.
 8. Upload the white-model video to the same LibTV canvas and create a new Seedance 2.5 video node in video-editing mode. Connect the white-model video, both scene views, and all approved character sheets when the model supports them.
-9. Generate only after a read-only preflight confirms the exact model, mode, references, output settings, and prompt. Show the finished node and player; report inspection limits honestly.
+9. Select the exact model and creative controls from get_model.inputContract, then run the prepared node once with update_node(run=true) using real project references. Keep its node identity. The execution entry validates model, references, and parameters internally before writing or dispatching. Show the finished node and player; report inspection limits honestly.
 
 Read [references/workflow-spec.md](references/workflow-spec.md) before creating assets, building the Blender scene, or writing the final Seedance prompt.
 
