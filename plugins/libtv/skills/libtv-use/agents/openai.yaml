@@ -1,0 +1,4 @@
+interface:
+  display_name: "LibTV"
+  short_description: "生成图片与视频、评测对比模型、读写画布并路由 LibTV 创作流程"
+  default_prompt: "使用 $libtv-use 在 LibTV 画布中查找模型、生成或对比测试图片与视频，并管理画布节点与导出。"

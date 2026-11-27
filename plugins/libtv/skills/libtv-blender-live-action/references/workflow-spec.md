@@ -105,7 +105,7 @@ Include:
 - diegetic ambience and effects;
 - exclusions for duplicate people, identity drift, malformed anatomy, unwanted text, subtitles, logos, watermarks, narration, and music when not requested.
 
-Run a read-only generation preflight first. Confirm that the resolved mode remains video editing, all intended video/image references are usable, duration follows the white-model source, and requested resolution/sound settings are effective. Generate once under current authorization, then wait on the same node rather than submitting duplicates.
+Use intent=edit with the exact model from get_model and real project video/image references. Select resolution and sound from inputContract; the gateway validates compatibility and derives duration from the white-model source internally before writing or dispatching. Run the prepared generator with update_node(run=true) under current authorization, then wait on that same node. generate_video creates a new node and must not be used to run the existing generator. run=false prepares and writes a node; it is not a read-only validation call.
 
 ## 7. Review and correction loop
 
